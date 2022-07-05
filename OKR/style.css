@@ -1,0 +1,27 @@
+.slider_container {
+  display: flex;
+  width: 350px;
+  height: 75px;
+  border-radius: 8px;
+  background-color: antiquewhite;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+#percentage {
+  margin-right: auto;
+  height: 50px;
+  width: 50%;
+  border-radius: 8px;
+  background-color: turquoise;
+}
+
+.elements input[type="range"] {
+  width: 350px;
+}
+
+.legend {
+  width: 350px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}

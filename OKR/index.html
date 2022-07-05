@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <script src="./script.js"></script>
+
+    <title>OKR</title>
+  </head>
+  <body>
+    <main>
+      <div class="overall">
+        <p>SKILLS</p>
+        <div class="slider_container">
+          <div class="percentage" id="percentage"></div>
+        </div>
+        <h2 id="numeric_percentage">50%</h2>
+      </div>
+
+      <div class="elements">
+        <p>Front end 0 to 20</p>
+        <!-- slider -->
+        <div>
+          <p id="frontend_val"></p>
+
+          <input
+            id="frontend_slider"
+            type="range"
+            min="0"
+            max="20"
+            value="10"
+            step="1"
+            onmousemove="reportSliderVal(event)"
+          />
+        </div>
+        <div class="legend">
+          <span>0</span>
+          <span>20</span>
+        </div>
+      </div>
+
+      <div class="elements">
+        <p>SQL 0 to 20</p>
+        <div>
+          <p id="sql_val"></p>
+          <input
+            id="sql_slider"
+            type="range"
+            min="0"
+            max="20"
+            value="10"
+            step="1"
+            onmousemove="reportSliderVal(event)"
+          />
+        </div>
+      </div>
+
+      <div class="elements">
+        <p>Back end 0 to 20</p>
+        <div>
+          <p id="backend_val"></p>
+          <input
+            id="backend_slider"
+            type="range"
+            min="0"
+            max="20"
+            value="10"
+            step="1"
+            onmousemove="reportSliderVal(event)"
+          />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
