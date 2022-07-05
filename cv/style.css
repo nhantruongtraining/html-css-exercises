@@ -1,0 +1,59 @@
+/* html {
+  background-color: rgb(244, 245, 247);
+}
+
+body {
+  margin: 0px auto;
+  width: 60%;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #243b4a;
+  height: 220px;
+  vertical-align: middle;
+}
+
+.header-container > div {
+  color: whitesmoke;
+}
+
+div.social ul {
+  list-style-type: none;
+  margin: 40px 30px 10px 0px;
+  font-size: 1em;
+  line-height: 1.6em;
+}
+
+div.social a:link {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+div.social img {
+  border-radius: 5px;
+}
+
+div.body-container {
+  background-color: white;
+  color: #243b4a;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+div.summary {
+  width: 100%;
+  color: #243b4a;
+}
+
+div.exp {
+  width: 65%;
+}
+
+div.aside {
+  width: 35%;
+} */
