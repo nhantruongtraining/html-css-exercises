@@ -1,0 +1,48 @@
+body {
+  width: 60%;
+  margin: 0px auto;
+}
+
+.room-plan {
+  background-color: whitesmoke;
+  margin: 40px 0px;
+}
+
+.teacher {
+  background-color: aquamarine;
+  padding: 15px 30px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.student-seat {
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* .middle {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  margin: 5px 5px 30px 5px;
+} */
+
+.box {
+  border: 3px solid #666;
+  background-color: #ddd;
+  border-radius: 0.5em;
+  padding: 10px;
+  cursor: move;
+}
+
+.box.over {
+  border: 3px dotted #666;
+}

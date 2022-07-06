@@ -1,46 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <style>
-      #div1,
-      #div2 {
-        float: left;
-        width: 100px;
-        height: 35px;
-        margin: 10px;
-        padding: 10px;
-        border: 1px solid black;
-      }
-      #drag1 {
-        background-color: turquoise;
-        width: 88px;
-        height: 31px;
-      }
-    </style>
-    <script>
-      function allowDrop(ev) {
-        ev.preventDefault();
-      }
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Room Seat Management</title>
 
-      function drag(ev) {
-        ev.dataTransfer.setData("text", ev.target.id);
-      }
-
-      function drop(ev) {
-        ev.preventDefault();
-        var data = ev.dataTransfer.getData("text");
-        ev.target.appendChild(document.getElementById(data));
-      }
-    </script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h2>Drag and Drop</h2>
-    <p>Drag the image back and forth between the two div elements.</p>
+    <h1>Class Room Seat Management</h1>
+    <hr />
+    <input
+      type="button"
+      id="import-excel"
+      value="Import students from Excel file"
+      onclick=""
+    />
 
-    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-      <div draggable="true" ondragstart="drag(event)" id="drag1"></div>
-    </div>
+    <section class="room-plan">
+      <br />
+      <p><span class="teacher">Teacher</span></p>
+      <br />
 
-    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="student-seat">
+        <!-- Left column -->
+        <div class="container">
+          <div class="box" draggable="true">A</div>
+          <div class="box" draggable="true">B</div>
+          <div class="box" draggable="true">C</div>
+          <div class="box" draggable="true">D</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+        </div>
+
+        <!-- Passage/ aisle -->
+        <div class="passage">
+          <div class="row">row-1</div>
+          <div class="row">row-2</div>
+          <div class="row">row-3</div>
+          <div class="row">row-4</div>
+          <div class="row">row-5</div>
+          <div class="row">row-6</div>
+          <div class="row">row-7</div>
+        </div>
+
+        <!-- Right column -->
+        <div class="container">
+          <div class="box" draggable="true">E</div>
+          <div class="box" draggable="true">F</div>
+          <div class="box" draggable="true">G</div>
+          <div class="box" draggable="true">H</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+          <div class="box" draggable="true">empty seat</div>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
   </body>
 </html>

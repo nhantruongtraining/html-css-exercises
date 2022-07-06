@@ -46,11 +46,31 @@ h4 {
   margin-left: 60px;
 }
 
+.info a:link {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.info a:visited {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.info a:active {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.info a:hover {
+  color: whitesmoke;
+  text-decoration: underline;
+}
+
 .social ul {
   list-style-type: none;
   margin: 40px 60px 0px 0px;
   font-size: 1em;
-  line-height: 1.6em;
+  line-height: 2.2em;
 }
 
 .social a:link {
@@ -68,7 +88,7 @@ h4 {
   text-decoration: none;
 }
 
-.social a:hover{
+.social a:hover {
   color: whitesmoke;
   text-decoration: underline;
 }
@@ -82,13 +102,12 @@ h4 {
 section {
   background-color: white;
   padding: 30px 30px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   opacity: 0.9;
 }
 
 .summary {
   color: #243b4a;
-  
 }
 
 .body-container {
@@ -160,9 +179,9 @@ div.description {
 }
 
 .light-grey-bar {
-  background-color:#f1f1f1
+  background-color: #f1f1f1;
 }
 
 .grey-bar {
-  background-color:#9e9e9e
+  background-color: #9e9e9e;
 }
