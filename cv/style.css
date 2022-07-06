@@ -1,59 +1,168 @@
-/* html {
+/* * {
+  margin: 0px;
+  padding: 0px;
+} */
+
+html {
   background-color: rgb(244, 245, 247);
 }
 
 body {
   margin: 0px auto;
   width: 60%;
+  min-width: 900px;
+}
+
+hr {
+  width: 100%;
+}
+
+h4 {
+  opacity: 0.8;
+  font-size: 0.9em;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .header-container {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   background-color: #243b4a;
   height: 220px;
-  vertical-align: middle;
-}
-
-.header-container > div {
+  /* vertical-align: middle; */
   color: whitesmoke;
 }
 
-div.social ul {
+.info {
+  margin-left: 60px;
+}
+
+.social ul {
   list-style-type: none;
-  margin: 40px 30px 10px 0px;
+  margin: 40px 60px 0px 0px;
   font-size: 1em;
   line-height: 1.6em;
 }
 
-div.social a:link {
+.social a:link {
   color: whitesmoke;
   text-decoration: none;
 }
 
-div.social img {
+.social a:visited {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.social a:active {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.social a:hover{
+  color: whitesmoke;
+  text-decoration: underline;
+}
+
+.social img {
   border-radius: 5px;
 }
 
-div.body-container {
+/* Main */
+
+section {
   background-color: white;
+  padding: 30px 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  opacity: 0.9;
+}
+
+.summary {
+  color: #243b4a;
+  
+}
+
+.body-container {
   color: #243b4a;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
-div.summary {
-  width: 100%;
-  color: #243b4a;
-}
-
-div.exp {
+.exp-container {
   width: 65%;
+  margin: 0px 30px 0px 0px;
 }
 
-div.aside {
+.block {
+  margin-bottom: 50px;
+}
+
+.exp-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.position {
+  font-weight: bold;
+  font-size: large;
+  opacity: 0.8;
+}
+
+.company {
+  font-weight: bold;
+  font-size: small;
+  opacity: 0.8;
+}
+
+.year {
+  font-size: 0.9em;
+  opacity: 0.6;
+  margin-top: 5px;
+}
+
+div.description {
+  margin-top: 15px;
+}
+
+.technologies {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: left;
+}
+
+.tech {
+  background-color: #243b4a;
+  margin-top: 0px;
+  margin-right: 10px;
+  padding: 2px 5px;
+  color: whitesmoke;
+  font-size: small;
+  border-radius: 5px;
+}
+
+/* Aside: Skills, Education */
+
+.aside-container {
   width: 35%;
-} */
+  margin: 0px 0px 0px 30px;
+}
+
+.light-grey-bar {
+  background-color:#f1f1f1
+}
+
+.grey-bar {
+  background-color:#9e9e9e
+}
