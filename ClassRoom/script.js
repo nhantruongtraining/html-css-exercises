@@ -1,3 +1,7 @@
+
+
+// Drag and drop students
+
 document.addEventListener('DOMContentLoaded', (event) => {
 
     function handleDragStart(e) {
@@ -50,21 +54,27 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 });
 
-// Import Excel
-// import * as XLSX from 'https://cdn.sheetjs.com/xlsx-0.18.9/package/xlsx.mjs';
-// var workbook = XLSX.readFile(studentlist.xlsx);
+// Import student list from Excel
+import * as XLSX from "xlsx";
 
-// function handleFile(e) {
-//     var file = e.target.files[0];
-//     var reader = new FileReader();
-//     reader.onload = function (e) {
-//         var data = e.target.result;
-//         /* reader.readAsArrayBuffer(file) -> data will be an ArrayBuffer */
-//         var workbook = XLSX.read(e.target.result);
+function handleFile(e) {
+    var workbook = XLSX.readFile(studentlist.xlsx);
 
-//         /* DO SOMETHING WITH workbook HERE */
-//     };
-//     reader.readAsArrayBuffer(file);
-// }
+    var file = e.target.files[0];
+    var reader = new FileReader();
+    reader.onload = function (e) {
+        var data = e.target.result;
+        /* reader.readAsArrayBuffer(file) -> data will be an ArrayBuffer */
+        var workbook = XLSX.read(e.target.result);
 
-// input_dom_element.addEventListener("change", handleFile, false);
+        /* DO SOMETHING WITH workbook HERE */
+        if (!("TextDecoder" in window))
+            alert("Sorry, this browser does not support TextDecoder...");
+
+        var enc = new TextDecoder("utf-8");
+        console.log(enc.decode(workbook));
+    };
+    reader.readAsArrayBuffer(file);
+}
+
+input_dom_element.addEventListener("change", handleFile, false);

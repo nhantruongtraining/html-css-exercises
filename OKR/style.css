@@ -1,22 +1,59 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  vertical-align: middle;
+  background-color: slategrey;
+}
+
+main{
+  background-color: snow;
+}
+
 .slider_container {
+  position: relative;
   display: flex;
   width: 350px;
-  height: 75px;
+  height: 30px;
   border-radius: 8px;
-  background-color: antiquewhite;
-  flex-flow: column nowrap;
-  justify-content: center;
+  background-color: whitesmoke;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#numeric_percentage{
+  position: absolute;
+  right: 0;
 }
 #percentage {
-  margin-right: auto;
-  height: 50px;
+  height: 27px;
   width: 50%;
   border-radius: 8px;
-  background-color: turquoise;
+background-color: turquoise;
+}
+
+.elements{
+  border-radius: 8px;
+}
+
+.elements h2{
+  transition: text-decoration ease-in-out 0.4s;
 }
 
 .elements input[type="range"] {
   width: 350px;
+  transition: all .3s ease-in-out, 
+}
+.elements:hover{
+  position: relative;
+  box-shadow: 3px 3px 5px whitesmoke;
+  left: -5px;
+  zoom: 105%;
+}
+.elements:hover h2{
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-decoration-color: salmon;
 }
 
 .legend {
@@ -24,4 +61,26 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+}
+.legend span {
+  color: salmon;
+}
+
+main{
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#frontend_val,
+#sql_val,
+#backend_val{
+  padding: 0 5px;
+  font-size: 1.3rem;
+  text-align: right;
+  color: salmon;
+  position: relative;
+  bottom: -20px;
 }

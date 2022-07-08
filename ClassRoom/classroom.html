@@ -12,7 +12,7 @@
     <h1>Class Room Seat Management</h1>
     <hr />
     <p>Import student list from Excel file:</p>
-    <input type="file" id="input_dom_element" />
+    <input type="file" id="input_dom_element" onchange="handleFile()" />
 
     <section class="room-plan">
       <br />
@@ -97,5 +97,6 @@
       </div>
     </section>
     <script src="./script.js"></script>
+    <script src="https://cdn.sheetjs.com/xlsx-0.18.9/package/dist/xlsx.full.min.js"></script>
   </body>
 </html>
